@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.LoginActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <ImageView
+            android:id="@+id/idconnectlogo"
+            android:layout_width="39dp"
+            android:layout_height="35dp"
+            android:visibility="visible"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/idDeclParentConnect"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_700"
+            android:text="@string/non_connecte_Caption"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="134dp"
+        android:layout_height="119dp"
+        android:src="@drawable/logo_garderie"
+        android:layout_gravity="center"
+        android:layout_marginBottom="1dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/garderie_name_Caption"
+        android:textSize="20dp"
+        android:textColor="@color/rougeBordeaux"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/DeclarationLabel_Caption"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_corner_view"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"/>
+
+
+    <TextView
+        android:id="@+id/idDeclParentCategorie"
+        android:layout_width="match_parent"
+        android:hint="@string/Decl_Parent_Categorie_Caption"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/gris"
+        android:textColor="@color/black"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingStart="8dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/idDeclParentTitre"
+        android:layout_width="match_parent"
+        android:hint="@string/Decl_Parent_Titre_Caption"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/gris"
+        android:textColor="@color/black"
+        android:background="@color/lightgris"
+        />
+
+
+    <EditText
+        android:id="@+id/idDeclParentDescription"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="@string/Decl_Parent_Description_Caption"
+        android:textAlignment="textStart"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gris"
+        android:background="@color/lightgris"/>
+
+
+
+
+
+    <Button
+        android:id="@+id/idDeclParentSoumettre"
+        android:textAllCaps="false"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DeclParent_Button_Caption"
+        android:layout_gravity="center"
+        android:textSize="16dp"/>
+
+
+
+
+</LinearLayout>

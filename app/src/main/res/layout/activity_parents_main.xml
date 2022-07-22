@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.LoginActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <ImageView
+            android:id="@+id/idconnectlogo"
+            android:layout_width="39dp"
+            android:layout_height="35dp"
+            android:visibility="visible"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/idParentConnect"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_700"
+            android:text="@string/non_connecte_Caption"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="134dp"
+        android:layout_height="119dp"
+        android:src="@drawable/logo_garderie"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/garderie_name_Caption"
+        android:textSize="20dp"
+        android:textColor="@color/rougeBordeaux"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/main_parent_Caption"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_corner_view"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/declarerevenement"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:gravity="left"
+
+        android:text="@string/parent_Evenement_Caption"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+
+
+   <LinearLayout
+       android:layout_marginTop="4dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center">
+
+
+       <RadioGroup
+           android:id="@+id/idCategorieEvenement"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <RadioButton
+               android:id="@+id/idSignalerAbsence"
+               android:layout_marginTop="4dp"
+               android:layout_width="match_parent"
+               android:layout_height="24dp"
+               android:text="@string/parent_Absence_Caption"
+               android:textColor="@color/purple_700"
+               android:textSize="16sp"
+               android:textStyle="bold"
+               android:background="@color/lightgris"
+               android:checked="true"/>
+
+           <RadioButton
+               android:id="@+id/idDeclarerBlessure"
+               android:layout_marginTop="4dp"
+               android:layout_width="match_parent"
+               android:layout_height="24dp"
+               android:text="@string/parent_Blessure_Caption"
+               android:textColor="@color/purple_700"
+               android:textSize="16sp"
+               android:textStyle="bold"
+               android:background="@color/lightgris"/>
+
+
+           <RadioButton
+               android:id="@+id/idSignalerAnniversaire"
+               android:layout_marginTop="4dp"
+               android:layout_width="match_parent"
+               android:layout_height="24dp"
+               android:text="@string/parent_Anniversaire_Caption"
+               android:textColor="@color/purple_700"
+               android:textSize="16sp"
+               android:textStyle="bold"
+               android:background="@color/lightgris"/>
+
+           <RadioButton
+               android:id="@+id/idSignalerAutreEvenement"
+               android:layout_marginTop="4dp"
+               android:layout_width="match_parent"
+               android:layout_height="24dp"
+               android:text="@string/parent_AutreEvemenent_Caption"
+               android:textColor="@color/purple_700"
+               android:textSize="16sp"
+               android:textStyle="bold"
+               android:background="@color/lightgris"/>
+
+       </RadioGroup>
+
+
+
+
+   </LinearLayout>
+
+    <Button
+        android:id="@+id/idContinuezDeclaration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/parent_continuer_Caption"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/gris"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+<ImageView
+
+    android:layout_width="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_height="wrap_content"
+    android:src="@drawable/listeevenement"/>
+
+    <TextView
+        android:id="@+id/idListeEvenement"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:gravity="left"
+
+        android:text="@string/parent_listeEvenement_Caption"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/idgenererListe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/parent_generer_Caption"
+       android:layout_marginLeft="8dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/gris"
+        />
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

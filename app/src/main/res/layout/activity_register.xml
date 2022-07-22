@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.LoginActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="134dp"
+        android:layout_height="119dp"
+        android:src="@drawable/logo_garderie"
+        android:layout_gravity="center"
+        android:layout_marginBottom="1dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/garderie_name_Caption"
+        android:textSize="20dp"
+        android:textColor="@color/rougeBordeaux"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/registerLabel_Caption"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_corner_view"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"/>
+
+
+    <EditText
+        android:id="@+id/idRegNom"
+        android:layout_width="match_parent"
+        android:hint="@string/registerNom_Caption"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/gris"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/idRegPrenom"
+        android:layout_width="match_parent"
+        android:hint="@string/registerPrenom_Caption"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/gris"
+        android:textColor="@color/black"
+        />
+
+
+    <EditText
+        android:id="@+id/idRegNumeroTelephone"
+        android:layout_width="match_parent"
+        android:hint="@string/registerNumeroTelephone_Caption"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/gris"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/idRegNomUtilisateur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/registerNomUtilisateur_Caption"
+        android:textColorHint="@color/gris"
+        android:textColor="@color/black"
+
+        />
+
+    <EditText
+        android:id="@+id/idRegMotDePasse"
+        android:layout_width="match_parent"
+        android:hint="@string/registerMotDePasse_Caption"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColorHint="@color/gris"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registerCategorieUtilisateur_Caption"
+        android:textColor="@color/black"
+        />
+
+    <RadioGroup
+        android:id="@+id/idCategorieUtlisateur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+    <RadioButton
+    android:id="@+id/idRegParent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/registerTypeParent_Caption"
+    android:layout_marginEnd="16dp"
+    android:checked="true"
+    android:textColor="@color/black"
+    />
+
+        <RadioButton
+     android:id="@+id/idRegAdministration"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="@string/registerTypeAdministration_Caption"
+     android:layout_marginEnd="16dp"
+     android:textColor="@color/black"
+    />
+        <RadioButton
+    android:id="@+id/idRegEnseignant"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/registerTypeEnseignant_Caption"
+    android:layout_marginEnd="16dp"
+    android:textColor="@color/black"
+            />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/idRegCreerCompte"
+        android:textAllCaps="false"
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registerButton_Caption"
+        android:layout_gravity="center"
+        android:textSize="16dp"/>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.LoginActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <ImageView
+            android:id="@+id/idconnectlogo"
+            android:layout_width="39dp"
+            android:layout_height="35dp"
+            android:visibility="visible"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/idEnseignantConnect"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_700"
+            android:text="@string/non_connecte_Caption"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="134dp"
+        android:layout_height="119dp"
+        android:src="@drawable/logo_garderie"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/garderie_name_Caption"
+        android:textSize="20dp"
+        android:textColor="@color/rougeBordeaux"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/main_enseignant_Caption"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_corner_view"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/idSaisirCommunication"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@drawable/bordered_rounded_view"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/enseignant_Note_Caption"
+            android:textAllCaps="false"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/idEnsGroupeEleve"
+            android:layout_width="match_parent"
+            android:hint="@string/ensGroupeEleve_Caption"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/gris"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/idEnsNomEtPrenomEleve"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:hint="@string/ensNomPrenomEleve_Caption"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/gris"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/idEnsNoteEleve"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:hint="@string/ensNoteEleve_Caption"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/gris"
+            android:textColor="@color/black"
+            android:inputType="number"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:text="@string/categorie_Note_Caption"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+
+        <RadioGroup
+            android:id="@+id/idCategorieEvenement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <RadioButton
+                android:id="@+id/idQuiz"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="@string/quiz_Caption"
+                android:textColor="@color/purple_700"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@color/lightgris"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/idIntra"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="@string/intra_Caption"
+                android:textColor="@color/purple_700"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@color/lightgris"/>
+
+
+            <RadioButton
+                android:id="@+id/idFinale"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="@string/final_Caption"
+                android:textColor="@color/purple_700"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@color/lightgris"/>
+
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="12dp"
+        android:id="@+id/idensEnregistrerNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ens_Enregistrer_Caption"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/gris"
+        android:textSize="16dp"
+        />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="24dp">
+    <TextView
+        android:id="@+id/idCompteNotes"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="**"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/purple_700"/>
+
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ens_nbreNote_Caption"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/purple_700"/>
+    </LinearLayout>
+
+</LinearLayout>

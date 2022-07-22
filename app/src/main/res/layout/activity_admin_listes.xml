@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.LoginActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <ImageView
+            android:id="@+id/idconnectlogo"
+            android:layout_width="39dp"
+            android:layout_height="35dp"
+            android:visibility="visible"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/idListe_AdminConnect"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_700"
+            android:text="@string/non_connecte_Caption"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="134dp"
+        android:layout_height="119dp"
+        android:src="@drawable/logo_garderie"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/garderie_name_Caption"
+        android:textSize="20dp"
+        android:textColor="@color/rougeBordeaux"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/idlistecaption"
+        android:layout_width="150dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/liste_Caption"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_corner_view"
+        android:textStyle="bold"
+        android:padding="4dp"/>
+
+    <TextView
+        android:id="@+id/idnomliste"
+        android:layout_width="165dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:layout_height="wrap_content"
+        android:text="@string/liste_name_Caption"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_corner_view"
+        android:textStyle="bold"
+        />
+</LinearLayout>
+
+    <ListView
+        android:id="@+id/idListe"
+        android:layout_width="match_parent"
+        android:divider="@color/rougeBordeaux"
+        android:dividerHeight="1dp"
+        android:listSelector="@color/lightgris"
+        android:layout_height="wrap_content"
+
+        />
+
+
+</LinearLayout>

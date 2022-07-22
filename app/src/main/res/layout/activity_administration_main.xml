@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.LoginActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <ImageView
+            android:id="@+id/idconnectlogo"
+            android:layout_width="39dp"
+            android:layout_height="35dp"
+            android:visibility="visible"
+            android:src="@drawable/user" />
+
+        <TextView
+        android:id="@+id/idAdminConnect"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/purple_700"
+        android:layout_marginEnd="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/non_connecte_Caption"
+        android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="134dp"
+        android:layout_height="119dp"
+        android:src="@drawable/logo_garderie"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/garderie_name_Caption"
+        android:textSize="20dp"
+        android:textColor="@color/rougeBordeaux"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/main_administartion_Caption"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_corner_view"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+
+        <TextView
+
+            android:id="@+id/idEditerListeParents"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/bordered_rounded_view"
+            android:text="@string/admin_Editer_Parents_Caption"
+            android:textAllCaps="false"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idEditerListeEnseignants"
+            android:layout_width="185dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:background="@drawable/bordered_rounded_view"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/admin_Editer_Professeurs_Caption"
+            android:textAllCaps="false"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

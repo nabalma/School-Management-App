@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Garderie Royale </string>
+
+
+    <string name="non_connecte_Caption">Non Connecté</string>
+
+
+    <!-- Register -->
+    <string name="registerLabel_Caption">REGISTER</string>
+    <string name="garderie_name_Caption">GARDERIE ROYALE</string>
+    <string name="registerNomUtilisateur_Caption">Nom d\'utilisateur *</string>
+    <string name="registerMotDePasse_Caption">Mot de passe *</string>
+    <string name="registerNom_Caption">Nom *</string>
+    <string name="registerPrenom_Caption">Prénom *</string>
+    <string name="registerNumeroTelephone_Caption">Numéro de Telephone *</string>
+    <string name="registerTypeAdministration_Caption">Administration</string>
+    <string name="registerTypeParent_Caption">Parent</string>
+    <string name="registerTypeEnseignant_Caption">Enseignant</string>
+    <string name="registerCategorieUtilisateur_Caption">Categorie d\'utilisateur *</string>
+    <string name="registerButton_Caption">Créer votre compte</string>
+    <string name="FromRegisterToLogin_Caption">Allez a Login</string>
+
+    <!-- Login -->
+    <string name="loginLabel_Caption">LOGIN</string>
+    <string name="loginUsername_Caption">Nom d\'utilisateur</string>
+    <string name="loginPassword_Caption">Mot de Passe</string>
+    <string name="loginButton_Caption">Connectez vous</string>
+    <string name="allerARegister_Caption">Vous êtes Nouveau ?, Creer votre Compte</string>
+
+
+    <!-- Main Parents -->
+    <string name="main_parent_Caption">ACCEUIL PARENTS</string>
+    <string name="parent_Absence_Caption">Signaler une absence</string>
+    <string name="parent_Anniversaire_Caption">Signaler un anniversaire</string>
+    <string name="parent_AutreEvemenent_Caption">Signaler un autre type d\'évènement</string>
+    <string name="parent_Blessure_Caption">Déclarer une blessure</string>
+    <string name="parent_listeEvenement_Caption">Generer liste des évenements</string>
+    <string name="parent_Evenement_Caption">Déclarer un évenement</string>
+    <string name="parent_generer_Caption">Generer</string>
+    <string name="parent_continuer_Caption">Continuez la déclaration</string>
+
+
+    <!-- Main Administation -->
+    <string name="main_administartion_Caption">ACCEUIL ADMINISTRATION</string>
+    <string name="admin_Editer_Professeurs_Caption">Liste des Enseignants</string>
+    <string name="admin_Editer_Parents_Caption">Liste des Parents</string>
+
+    <!-- Administation Liste-->
+    <string name="liste_Caption">LISTE DES</string>
+    <string name="liste_name_Caption">****</string>
+    <string name="liste_parents">PARENTS</string>
+    <string name="liste_professeurs">ENSEIGNANTS</string>
+
+    <!-- Main Enseignants -->
+    <string name="main_enseignant_Caption">ACCEUIL ENSEIGNANTS</string>
+    <string name="enseignant_Note_Caption">Enregistrement de la Note d\'un élève</string>
+    <string name="enseignant_Editer_Eleves_Caption">Liste des élèves</string>
+
+    <string name="quiz_Caption">Quiz (10%)</string>
+    <string name="intra_Caption">Intra (30%)</string>
+    <string name="final_Caption">Final (60%)</string>
+    <string name="categorie_Note_Caption">Catégorie de la note</string>
+
+    <string name="ensNomPrenomEleve_Caption">Nom et Prénom de l\'élève</string>
+    <string name="ensNoteEleve_Caption">Note de l\'élève (/100)</string>
+    <string name="ensGroupeEleve_Caption">Groupe de l\'élève</string>
+    <string name="ens_Enregistrer_Caption">Enregistrer la note</string>
+    <string name="ens_nbreNote_Caption">notes pour l\'interessé</string>
+
+
+    <!-- Declaration Parents -->
+    <string name="Decl_Parent_Categorie_Caption">Catégorie</string>
+    <string name="Decl_Parent_Titre_Caption">Titre</string>
+    <string name="Decl_Parent_Description_Caption">Description</string>
+    <string name="DeclarationLabel_Caption">DECLARATION</string>
+    <string name="DeclParent_Button_Caption">Soumettre Déclaration</string>
+
+    <!-- Evenements -->
+    <!-- Catégories d'Evenements -->
+    <string name="absence">Absence</string>
+    <string name="blessure">Blessure</string>
+    <string name="anniversaire">Anniversaire</string>
+    <string name="autre_evenement">Autre évenement</string>
+
+
+    <!-- Liste des evenements -->
+    <string name="liste_evenement_parent_Caption">LISTE DE VOS EVENEMENTS</string>
+    <string name="nbre_evenement_Caption">Évenement(s)</string>
+
+
+</resources>
